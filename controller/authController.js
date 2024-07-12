@@ -4,4 +4,4 @@ const signup=(req,res,next)=>{
         message:"Sign up successfully",
     })
 }
-module.exports={signup}
+module.exports={signup} 
