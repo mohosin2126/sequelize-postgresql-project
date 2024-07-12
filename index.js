@@ -13,7 +13,7 @@ app.get("/",(req,res)=>{
  res.send("Welcome to the server")
 })
 
-// app.use("/api/v1/auth",auth)
+app.use("/api/v1/auth",authRouter)
 
 
 // if any route not found 
