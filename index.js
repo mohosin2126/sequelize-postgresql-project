@@ -16,6 +16,16 @@ app.get("/",(req,res)=>{
 // app.use("/api/v1/auth",auth)
 
 
+// if any route not found 
+app.use("*",(req,res)=>{
+    res.status(404).json({
+status:"Failed",
+        message:"Route Not Found"
+    }
+        
+    )
+})
+
 app.listen(process.env.APP_PORT,()=>{
     console.log("Server listening on port "+process.env.APP_PORT)
 })
