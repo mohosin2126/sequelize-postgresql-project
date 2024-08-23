@@ -4,7 +4,7 @@
 
 ## First install sequelize 
 
-```sh
+```js
 npm install --save sequelize
 ```
 
