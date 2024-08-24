@@ -1,4 +1,7 @@
-[tutorial] ( https://youtu.be/QoLqMDSBZAs?si=1BeAA_NFWuPtNwpf )
+## First install sequelize 
 
+```js
 
-(tutorial) [https://youtu.be/QoLqMDSBZAs?si=1BeAA_NFWuPtNwpf]
+npm install --save sequelize
+
+```
