@@ -1,7 +1,45 @@
+
+[tutorial] (https://youtu.be/QoLqMDSBZAs?si=1BeAA_NFWuPtNwpf)
+
+
 ## First install sequelize 
 
 ```js
-
 npm install --save sequelize
+```
 
+
+## Install the Database
+
+```js
+npm install --save pg pg-hstore # Postgres
+```
+
+## Install sequelize CLI for migration 
+
+```js
+npm install --save-dev sequelize-cli
+```
+
+
+## create a .sequilizerc file 
+
+```js
+// .sequelizerc
+const path = require('path');
+
+module.exports = {
+  config: path.resolve('config', 'database.json'),
+  'models-path': path.resolve('db', 'models'),
+  'seeders-path': path.resolve('db', 'seeders'),
+  'migrations-path': path.resolve('db', 'migrations'),
+};
+```
+
+
+
+## Run command (it will help to create db where will be three folder name migrations model and seeders)
+
+```js
+npx sequelize-cli init
 ```
